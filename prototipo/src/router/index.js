@@ -50,6 +50,36 @@ const routes = [
             name: 'metodopago',
             component: () => import('../views/Cliente/Carrito/metodopago.vue'),
       },
+      {
+        path:'Administracion',
+        name:'Administracion',
+        component: () => import('../views/Administrador/BarraAdmin.vue'),
+      },
+      {
+        path:'Cliente',
+        name:'Cliente',
+        component: ()=>  import('../views/Administrador/Cliente.vue')
+      },
+      {
+        path:'Detalle_contacto',
+        name:'Detalle_contacto',
+        component: ()=> import('../views/Administrador/Detalle_contacto.vue')
+      },
+      {
+        path:'Detalle_orden',
+        name:'Detalle_orden',
+        component: ()=> import('../views/Administrador/detalle_orden.vue')
+      },
+      {
+        path:'Detalle_producto',
+        name:'Detalle_producto',
+        component:()=> import('../views/Administrador/Detalleproducto.vue')
+      },
+      {
+        path:'Tablas_cliente',
+        name:'Tablas_cliente',
+        component:()=> import('../views/Administrador/TablasCliente.vue')
+      }
       
       
     ],
