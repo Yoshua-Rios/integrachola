@@ -43,6 +43,8 @@
     </v-app-bar>
     <carrusel></carrusel>
     <RouterView></RouterView>
+    <barraadmin></barraadmin>
+
     </v-app>
     </template>
     <style>
@@ -97,6 +99,7 @@
     import { ref } from 'vue'
     import carrusel from './carrusel.vue'
     import final from './footer.vue'
-    import { RouterLink, RouterView } from 'vue-router'      
+    import { RouterLink, RouterView } from 'vue-router' 
+    import barraadmin from '../Empleado/TablasCliente.vue'  
       const drawer = ref(null)
     </script>

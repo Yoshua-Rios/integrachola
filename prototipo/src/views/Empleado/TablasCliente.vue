@@ -19,26 +19,26 @@
       return {
         search:'',
         headers: [
-          { title: 'Producto', align: 'start', key: 'name' },
-          { title: 'Speed (knots)', align: 'end', key: 'speed' },
-          { title: 'Length (m)', align: 'end', key: 'length' },
-          { title: 'Price ($)', align: 'end', key: 'price' },
-          { title: 'Year', align: 'end', key: 'year' },
+          { title: 'Nombre', align: 'start', key: 'name' },
+          { title: 'Apellido', align: 'end', key: 'Apellido' },
+          { title: 'Direccion', align: 'end', key: 'Direccion' },
+          {title:'Telefono', align:'end', key:'Telefono'},
+          { title: 'Correo Electronico', align: 'end', key: 'Correo' },
         ],
         boats: [
           {
-            name: 'Speedster',
-            speed: 35,
-            length: 22,
-            price: 300000,
-            year: 2021,
+            name: 'Yoshua',
+            Apellido: 'Rios',
+            Telefono: 871238178,
+            Dirrecion: 'Av.Huelguistas de cananea',
+            Correo: 'yoshua@gmail.com',
           },
           {
-            name: 'OceanMaster',
-            speed: 25,
-            length: 35,
-            price: 500000,
-            year: 2020,
+            name: 'David',
+            Apellido: 25,
+            Telefono: 35,
+            Direccion: 500000,
+            Correo: 2020,
           },
           {
             name: 'Voyager',
@@ -102,7 +102,7 @@
 
     computed: {
       virtualBoats () {
-        return [...Array(10000).keys()].map(i => {
+        return [...Array(50).keys()].map(i => {
           const boat = { ...this.boats[i % this.boats.length] }
           boat.name = `${boat.name} #${i}`
           return boat
