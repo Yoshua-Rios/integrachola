@@ -97,6 +97,6 @@
     import carrusel from './carrusel.vue'
     import final from './footer.vue'
     import { RouterLink, RouterView } from 'vue-router' 
-    import barraadmin from '../Administrador/cateGo.vue'  
+    import barraadmin from '../Administrador/Proveedores.vue'
       const drawer = ref(null)
     </script>
