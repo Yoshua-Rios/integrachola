@@ -73,7 +73,7 @@ const routes = [
       {
         path:'Detalle_producto',
         name:'Detalle_producto',
-        component:()=> import('../views/Empleado/Detalleproducto.vue')
+        component:()=> import('../views/Empleado/DetalleProducto.vue')
       },
       {
         path:'Tablas_cliente',
