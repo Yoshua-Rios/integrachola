@@ -10,24 +10,66 @@
           sortable: false,
           key: 'name',
         },
+        {
+          title: 'Calle',
+          key: 'street',
+          sortable: false,},
+          {
+            title: 'Colonia',
+            key: 'colony',
+            sortable: false,
+          },
+          {
+            title:'C.P',
+            key:'postalCode',
+            sortable:false,
+          },
+          {
+            title:'Ciudad',
+            key:'city',
+            sortable:false,
+          },
+          {
+            title:'Telefono',
+            key:'phone',
+            sortable:false,
+          },
+          {
+            title:'Correo Electronico',
+            key:'email',
+            sortable:false,
+          },
         { title: 'Acciones ', key: 'actions', sortable: false },
       ],
       desserts: [],
       editedIndex: -1,
-      editedItem: {
-        name: '',
-        calories: 0,
-        fat: 0,
-        carbs: 0,
-        protein: 0,
-      },
       defaultItem: {
-        name: '',
-        calories: 0,
-        fat: 0,
-        carbs: 0,
-        protein: 0,
-      },
+  name: '',
+  calories: 0,
+  fat: 0,
+  carbs: 0,
+  protein: 0,
+  street: '',
+  colony: '',
+  postalCode: '',
+  city: '',
+  phone: '',
+  email: '',
+},
+editedItem: {
+  name: '',
+  calories: 0,
+  fat: 0,
+  carbs: 0,
+  protein: 0,
+  street: '',
+  colony: '',
+  postalCode: '',
+  city: '',
+  phone: '',
+  email: '',
+},
+
     }),
 
     computed: {
@@ -143,13 +185,35 @@
                 <v-row>
                   <v-col
                     cols="12"
-                    sm="6"
-                    md="4"
+                    sm="12"
+                    md="10"
                   >
                     <v-text-field
                       v-model="editedItem.name"
                       label="Nombre De Proveedor"
                     ></v-text-field>
+                    <v-text-field
+                    v-model="editedItem.street"
+                     label="Calle"
+                     ></v-text-field>
+                     <v-text-field
+                      v-model="editedItem.colony"
+                      label="Colonia"></v-text-field>
+                      <v-text-field
+                      v-model="editedItem.postalCode"
+                      label="C.P."
+                      ></v-text-field>
+                      <v-text-field
+                      v-model="editedItem.city"
+                      label="Ciudad"
+                      ></v-text-field>
+                      <v-text-field
+                      v-model="editedItem.phone"
+                      label="Teléfono"></v-text-field>
+                      <v-text-field v-model="editedItem.email"
+                      label="Correo"></v-text-field>
+
+                    
                   </v-col>
                   
                   
