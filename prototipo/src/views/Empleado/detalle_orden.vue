@@ -220,7 +220,7 @@ export default {
               </v-row>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="primary" @click="closeProductDetails">Cerrar</v-btn>
+              <v-btn color="grey-darken-4" type="block" siz="large" @click="closeProductDetails">Cerrar</v-btn>
             </v-card-actions>
          # </v-card>
           </v-dialog>
